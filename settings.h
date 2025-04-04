@@ -1,0 +1,9 @@
+#define MAX_MSG 2048
+#define MAX_CLIENTS 10
+#define SH_MEMORY 1024
+#define MEMORY_NAME "/shared"
+#define BROADCAST_NAME "/broadcast"
+#define BROADCAST_MEMORY MAX_MSG+36
+#define SRV_NAME "SRV"
+#define PORT 8080
+#define ADDRESS "127.0.0.1"
