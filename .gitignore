@@ -3,3 +3,4 @@ referenceCode
 .vscode
 cli
 srv
+*.o
