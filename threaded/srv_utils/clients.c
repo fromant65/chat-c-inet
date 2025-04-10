@@ -58,3 +58,21 @@ void print_client_list(Client_list clients){
   }
   printf("\n");
 }
+
+void get_client_name_by_socket(Client_list clients, int socket, char* name_buffer){
+  for(Client_node *c = clients.head; c!=NULL; c=c->next){
+    if(c->current.socket_fd == socket){
+      strcpy(name_buffer, c->current.name);
+      break;
+    }
+  }
+}
+
+void update_client_name_by_socket(Client_list clients, int socket, char* name_buffer){
+  for(Client_node *c = clients.head; c!=NULL; c=c->next){
+    if(c->current.socket_fd == socket){
+      strcpy(c->current.name, name_buffer);
+      break;
+    }
+  }
+}

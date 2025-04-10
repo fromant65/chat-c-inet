@@ -4,3 +4,5 @@
 #define SRV_NAME "SRV"
 #define PORT 8080
 #define ADDRESS "127.0.0.1"
+#define EXITING_MSG "!exiting_srv"
+#define CLIENT_EXITING_MSG "!EXIT"
